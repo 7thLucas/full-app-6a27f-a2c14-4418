@@ -1,0 +1,97 @@
+<style>
+  .sl-body { display: flex; flex: 1; overflow: hidden; }
+  .mode-landscape .sl-body { flex-direction: row; }
+  .mode-portrait .sl-body { flex-direction: column; }
+  .mode-landscape .sl-col { width: 50%; }
+  .mode-portrait .sl-col { width: 100%; flex: 1; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full">
+
+    <!-- Header bar -->
+    <div class="flex items-center justify-between px-10 pt-8 pb-5" style="border-bottom: 1.5px solid #F5C6DC;">
+      <span class="text-xs font-bold tracking-widest uppercase" style="color: #B5548A;">GlowDesk</span>
+      <span class="text-xs font-medium tracking-wider uppercase" style="color: #9CA3AF;">The Case for Change</span>
+    </div>
+
+    <!-- Body: Problem + Solution -->
+    <div class="sl-body">
+
+      <!-- Problem column -->
+      <div class="sl-col flex flex-col gap-5 p-10" style="background: #FFF5F9;">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background: #F5C6DC;">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path d="M5 2V5.5M5 7.5V8.5" stroke="#B5548A" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color: #B5548A;">The Problem</span>
+        </div>
+        <h2 class="text-xl font-black leading-snug" style="color: #2D2D3A;">
+          Salons lose revenue every day to broken operations
+        </h2>
+        <ul class="flex flex-col gap-4">
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #F5C6DC; color: #B5548A;">✕</span>
+            <span class="text-xs leading-relaxed" style="color: #4B5563;">Appointments scattered across texts, calls, and paper books — double-bookings and empty chairs go unnoticed until revenue is already lost.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #F5C6DC; color: #B5548A;">✕</span>
+            <span class="text-xs leading-relaxed" style="color: #4B5563;">No-shows drain the schedule with no automated way to follow up or fill the slot in time.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #F5C6DC; color: #B5548A;">✕</span>
+            <span class="text-xs leading-relaxed" style="color: #4B5563;">Product inventory runs out mid-service; reorders are reactive, rushed, and costly to margins.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center text-xs font-bold" style="background: #F5C6DC; color: #B5548A;">✕</span>
+            <span class="text-xs leading-relaxed" style="color: #4B5563;">Clients drift away between visits because no one nudges them back at exactly the right moment.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Solution column -->
+      <div class="sl-col flex flex-col gap-5 p-10" style="background: #2D2D3A;">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded-full flex-shrink-0 flex items-center justify-center" style="background: #B5548A;">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <path d="M2 5L4.5 7.5L8.5 2.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color: #F5C6DC;">The Solution</span>
+        </div>
+        <h2 class="text-xl font-black leading-snug" style="color: white;">
+          One platform. Full control over bookings, team, and inventory.
+        </h2>
+        <ul class="flex flex-col gap-4">
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center" style="background: #B5548A;">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4L3.5 6L6.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="text-xs leading-relaxed" style="color: #D1D5DB;">A visual appointment calendar with smart booking, chair assignment, and 24/7 online booking for clients.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center" style="background: #B5548A;">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4L3.5 6L6.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="text-xs leading-relaxed" style="color: #D1D5DB;">Automated reminders cut no-shows; smart rebooking nudges bring clients back before they drift to a competitor.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center" style="background: #B5548A;">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4L3.5 6L6.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="text-xs leading-relaxed" style="color: #D1D5DB;">Live inventory tracking with low-stock alerts so you never run out of product during a service.</span>
+          </li>
+          <li class="flex gap-3 items-start">
+            <span class="mt-0.5 w-5 h-5 rounded-full flex-shrink-0 flex items-center justify-center" style="background: #B5548A;">
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none"><path d="M1.5 4L3.5 6L6.5 2" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span class="text-xs leading-relaxed" style="color: #D1D5DB;">A revenue dashboard that surfaces daily performance, chair utilization, and your top stylists at a glance.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
